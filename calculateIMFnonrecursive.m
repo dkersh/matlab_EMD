@@ -29,20 +29,6 @@ tic;
 
         %generate IMF
         imf = x - (maxSp + minSp)/2;
-        
-%         cla
-%         plot(x)
-%         plot(maxSp)
-%         plot(minSp)
-%         plot((maxSp + minSp)/2)
-%         plot(imf)
-%         plot(x)
-%         plot(x-imf)
-%         title(['Mean Envelope: ' num2str(i)])
-%         axis tight
-        drawnow
-%         saveas(h,['Res' num2str(i) '.png']);
-%         close all
 
         %Calculate SD
         sd = sum(((x - imf)./x).^2)
